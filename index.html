@@ -358,12 +358,13 @@
                 <!-- Live Demo -->
                 <button onclick="openAssignMateDemo()"
                         class="group border-2 border-slate-800 text-slate-900
-                                hover:bg-slate-900 hover:text-white
-                                px-4 py-1.5 rounded-full text-xs font-semibold
-                                transition inline-flex items-center gap-2">
+                            hover:bg-slate-900 hover:text-white
+                            px-4 py-1.5 rounded-full text-xs font-semibold
+                            transition inline-flex items-center gap-2">
                     <i class="fas fa-external-link-alt mr-2"></i>
                     Live Demo
                 </button>
+
 
                 <!-- View Code -->
                 <a href="https://github.com/KARIDEGNANESHWAR/AssignMate"
@@ -396,7 +397,7 @@
             <span class="bg-blue-50 text-blue-800 px-3 py-1 rounded-full border border-blue-100">Swing</span>
           </div>
           <div class="flex space-x-4 text-sm">
-            <a href="#" class="text-slate-600 hover:text-blue-600 flex items-center">
+            <a href="https://github.com/KarideGnaneshwar/FaceRecognition" target="_blank" class="text-slate-600 hover:text-blue-600 flex items-center">
               <i class="fab fa-github mr-2"></i>
               <span>View Code</span>
             </a>
@@ -422,7 +423,7 @@
             <span class="bg-blue-50 text-blue-800 px-3 py-1 rounded-full border border-blue-100">Scikit-learn</span>
           </div>
           <div class="flex space-x-4 text-sm">
-            <a href="#" class="text-slate-600 hover:text-blue-600 flex items-center">
+            <a href="https://github.com/KarideGnaneshwar/BotnetDetection-in-SDN" target="_blank" class="text-slate-600 hover:text-blue-600 flex items-center">
               <i class="fab fa-github mr-2"></i>
               <span>View Code</span>
             </a>
@@ -988,33 +989,31 @@
         });
     </script>
 
-    <script>
+<script>
 function openAssignMateDemo() {
-    const message =
-`📝 URL NOTE
-• This is an HTTP-only application
-• On mobile, remove "https" if added automatically
+    const message = `📝 Live Demo Access Note
+    
+• This demo runs on HTTP only (HTTPS/SSL is not enabled).
+• On some mobile browsers, the link may automatically switch to HTTPS and fail to load.
 
-⚠️ TESTING NOTICE (IMPORTANT)
-• Deployed only for testing and review
-• No SSL enabled; some mobile browsers may block it
-• If it doesn't open, try Incognito or type full http:// URL
-• Hosted on AWS Free Tier (upload size is limited)
-• Use different browsers for user & writer workflows
-• Avoid multiple tabs to prevent session conflicts
-• Pages may load partially — refresh if needed
-• Limited locations available for testing
-• Not a production release; minor issues may exist
+If the page doesn’t open:
+• Manually type the full URL starting with http://
+• Or remove the 's' from https in the address bar and reload
+• Desktop/laptop browsers usually work without any issues.
 
 Do you want to continue?`;
 
     if (confirm(message)) {
-        // SAME TAB navigation (works everywhere)
-        window.location.href =
-            "http://assignmate-app-env.eba-epe3d4fy.ap-south-1.elasticbeanstalk.com/";
+        // OPEN IN NEW TAB
+        window.open(
+            "http://assignmate-app-env.eba-epe3d4fy.ap-south-1.elasticbeanstalk.com/",
+            "_blank",
+            "noopener,noreferrer"
+        );
     }
 }
 </script>
+
 
 
 </body>
